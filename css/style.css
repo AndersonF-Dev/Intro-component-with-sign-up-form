@@ -2,6 +2,15 @@
 
 
 /* Estilos Globais */
+
+body{
+  background-image: url('../images/bg-intro-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+    width: 100%;
+    max-height: 100vh;
+}
 main {
     font-family: "Poppins", serif;
     display: flex;
@@ -11,10 +20,7 @@ main {
     padding: 0;
     width: 100%;
     height: auto;
-    background-image: url('../images/bg-intro-desktop.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: hsl(0, 100%, 74%);
+    
   }
   
   .main-container {

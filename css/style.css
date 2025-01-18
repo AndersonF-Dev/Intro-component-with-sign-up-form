@@ -1,170 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* body{
-    font-family: "Poppins", serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    height: 100vh;
-    background-image: url('../images/bg-intro-desktop.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: hsl(0, 100%, 74%);
-    
-}
-
-.intro-section{grid-area: intro-section;}
-.conteiner-form{grid-area: conteiner-form;}
-
-.main-container{
-    display: grid;
-    grid-template-areas: "intro-section conteiner-form";
-    grid-template-columns: 488px 540px;
-    display: flex;
-    align-items: center ;
-    justify-content: space-between;
-    
-    color: #ffffff;
-    background-color: rgb(255, 238, 0);
-    width: 1109px;
-
-    height: 530px;
-   
-}
-
-.conteiner-form{
-    
-    max-width: 540px;
-    
-}
-
-.intro-section{
-    background-color: aqua;
-    text-align: center;
-    max-width: 488px;
-    margin-bottom: 6%;
-    
-}
-.form-section{
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    padding: 2rem 2rem;
-    border-radius: .7rem;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.432), 0 2px 4px rgba(0, 0, 0, 0.06);
-    overflow: hidden;
-}
-
-.intro-title{
-    font-size: 3rem;
-}
-
-.intro-text{
-    color: hsl(250, 14%, 91%);
-}
-
-.pricing-banner{
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: hsl(248, 32%, 49%);
-    margin-bottom: 3%;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.432), 0 2px 4px rgba(0, 0, 0, 0.06);
-    border-radius: .7rem;
-}
-
-.signup-form{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
-
-.form-input{
-    width: 29.688rem;
-    height: 3.5rem;
-    padding: 1rem;
-    border: 1px solid #cac6c6;
-    border-radius:  .5rem;
-    
-    outline: none;
-}
-
-input:focus {
-    border-color: hsl(0, 100%, 74%); 
-    box-shadow: 0 0 5px hsl(0, 100%, 74%); 
-    outline: none; 
-  }
-
-.button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 3.5rem;
-    margin-top: 1rem;
-    background-color: hsl(154, 59%, 51%);
-  
-    border-radius: .5rem;
-    border-bottom: 2px solid hsl(150, 51%, 40%);
-    cursor: pointer;
-    transition: all .5s;
-
-    text-transform: uppercase;
-}
-
-.button:hover{
-    background-color: hsl(154, 79%, 64%);
-   
-}
-
-.terms-text{
-    text-align: center;
-    color: hsl(246, 25%, 77%);
-    font-size:  .8rem;
-}
-    
-
-@media (max-width: 820px){
-    .main-container{
-        flex-direction: column;
-        justify-content: center;
-        height: 100vh;
-    }
-}
-
-@media (max-width: 375px){
-    .main-container{
-        background-color: chocolate;
-        width: calc(310px + 5px);
-        height: calc(880px - 20px);
-        margin-top: 99%;
-        
-    }
-
-    .intro-title{
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: ){
-    .main-container{
-        background-color: chocolate;
-        width: 310px;
-        height: calc(880px - 20px);
-        margin-top: 99%;
-        
-    }
-
-    .intro-title{
-        font-size: 2rem;
-    }
-} */
-
 
 /* Estilos Globais */
-body {
+main {
     font-family: "Poppins", serif;
     display: flex;
     justify-content: center;
@@ -172,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-image: url('../images/bg-intro-desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -186,7 +24,6 @@ body {
     grid-template-columns: 1fr 1fr;
     width: 90%;
     max-width: 1100px;
-    height: auto;
     gap: 2rem;
     align-items: center;
     
@@ -209,7 +46,6 @@ body {
 }
 
 .pricing-banner{
-    /* height: 6rem; */
     height: 4rem;
     display: flex;
     align-items: center;
@@ -219,7 +55,7 @@ body {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.322), 0 2px 4px rgba(0, 0, 0, 0.06);
     border-radius: .7rem;
     padding: 2rem;
-
+    margin-top: 1rem;
     font-size: 1.2rem;
     color: white;
     text-align: center;
@@ -244,10 +80,10 @@ body {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.322), 0 2px 4px rgba(0, 0, 0, 0.06);
+    margin-bottom: 1rem;
   }
 
   .form-input{
-    /* width: 29.688rem; */
     height: 3.5rem;
     padding: 1rem;
     border: 1px solid #cac6c6;

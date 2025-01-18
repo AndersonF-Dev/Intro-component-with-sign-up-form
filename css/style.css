@@ -189,9 +189,7 @@ body {
     height: auto;
     gap: 2rem;
     align-items: center;
-    /* background-color: rgb(119, 112, 18); */
-    /* padding: 2rem; */
-    /* border-radius: 10px; */
+    
   }
   
   .intro-section {
@@ -235,8 +233,7 @@ body {
     grid-area: conteiner-form;
     
     border-radius: 0.7rem;
-    /* padding: 2rem; */
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    
   }
   
   .signup-form {
@@ -255,7 +252,7 @@ body {
     padding: 1rem;
     border: 1px solid #cac6c6;
     border-radius:  .5rem;
-    
+    position: relative;
     outline: none;
 }
 
@@ -263,6 +260,14 @@ input:focus {
     border-color: hsl(0, 100%, 74%); 
     box-shadow: 0 0 5px hsl(0, 100%, 74%); 
     outline: none; 
+  }
+
+  .form-input.erro {
+    border-color: red;
+  background-image: url('../images/icon-error.svg'); /* Caminho da imagem */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px 20px;
   }
   
   .button {
@@ -293,21 +298,13 @@ input:focus {
     color: hsl(0, 100%, 74%); 
     text-decoration: none;
 }
-  /* .button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 3.5rem;
-    margin-top: 1rem;
-    background-color: hsl(154, 59%, 51%);
-  
-    border-radius: .5rem;
-    border-bottom: 2px solid hsl(150, 51%, 40%);
-    cursor: pointer;
-    transition: all .5s;
 
-    text-transform: uppercase;
-} */
+span.erro {
+  color: red;
+  font-size: 12px;
+  display: none; /* Oculto por padrão */
+}
+  
   
  
   /* Media Queries */
@@ -342,10 +339,9 @@ input:focus {
     .pricing-banner{
         height: 6rem;
     }
-    .intro-text{
-        /* font-size: 1.5rem; */
-    }
+    
   }
+
   /* Smartphones */
   @media (max-width: 480px) {
     .main-container {

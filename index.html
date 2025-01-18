@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
   
 </head>
 <body>
@@ -32,16 +33,20 @@
       
       <section class="form-section">
       
-        <form action="" class="signup-form">
-          <input type="text" placeholder="First Name" class="form-input" id="firstName"></input>
-          <span class="error" id="nameError"></span>
-          <input type="text" placeholder="Last Name" class="form-input" id="lastName"></input>
-          <span class="error" id="lastNameError"></span>
-          <input type="text" placeholder="Email Address" class="form-input" id="email"></input>
-          <span class="error" id="emailError"></span>
-          <input type="text" placeholder="Password" class="form-input" id="password"></input>
+        <form action="" class="signup-form" id="signup-form">
+          <input type="text" placeholder="First Name" class="form-input" id="firstName">
+          <span class="erro" id="nameError"></span>
 
-          <input type="button" value="Claim your free trial" class="button"> </input>
+          <input type="text" placeholder="Last Name" class="form-input" id="lastName">
+          <span class="erro" id="lastNameError"></span>
+
+          <input type="text" placeholder="Email Address" class="form-input " id="email">
+          <span class="erro" id="emailError"></span>
+
+          <input type="password" placeholder="Password" class="form-input" id="password">
+          <span class="erro" id="passwordError"></span>
+
+          <input type="submit" value="Claim your free trial" class="button"> </input>
 
           <p class="terms-text">By clicking the button, you are agreeing to our <a href="#" class="terms-link">Terms and Services</a></p>
         </form>

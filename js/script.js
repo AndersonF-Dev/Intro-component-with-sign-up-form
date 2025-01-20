@@ -23,6 +23,7 @@ document.getElementById('signup-form').addEventListener('submit', function (even
         input.classList.add('erro');
         errorSpan.textContent = campo.mensagem;
         errorSpan.style.display = 'block';
+        errorSpan.style.borderColor = "red";
         isValid = false;
       } else {
         // Remove erro
